@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,7 +16,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }:{ addUtilities:any }) {
       addUtilities({
         '.scrollbar-hide': {
           '&::-webkit-scrollbar': {

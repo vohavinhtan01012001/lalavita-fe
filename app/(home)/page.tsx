@@ -1,7 +1,7 @@
 import HomeScreen from "@/components/home/HomeScreen";
 
-const Home = ({ setColorLogo }: { setColorLogo: (value:number) => void; }) => {
-    return <div className="">
+const Home = () => {
+    return <div >
         <HomeScreen />
     </div>
 }
