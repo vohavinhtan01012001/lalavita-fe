@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { IconSet } from "./IconSet";
 
 const Header = ({ selected }: { selected: number }) => {
-    return <div className="fixed px-[80px] pt-[80px] top-0 left-0 right-0 ">
+    return <div className="fixed px-[80px] pt-[80px] top-0 left-0 right-0 max-[700px]:px-4">
         <div className="flex items-start justify-between w-full z-50">
             <div>
                 <IconSet

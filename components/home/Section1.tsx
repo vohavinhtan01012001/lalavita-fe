@@ -65,8 +65,8 @@ const confirmLogos = [
 
 const Section1 = () => {
     return <div className="pb-[80px] pt-[156px]">
-        <div className=" flex flex-col items-center justify-center">
-            <div className='flex items-center gap-[200px]'>
+        <div className=" flex flex-col items-center justify-center max-[700px]:px-2">
+            <div className='flex items-center gap-[200px] max-[1400px]:gap-3 max-[1200px]:flex-col-reverse '>
                 <div className='pt-[103px]'>
                     <div>
                         <p className="text-[#42c0cc]">왜 라라비타 NMN일까요?</p>
@@ -106,7 +106,7 @@ const Section1 = () => {
                                 />
                             ))}
                         </div>
-                        <div className='mt-[149px]'>
+                        <div className='mt-[149px] max-[1200px]:hidden'>
                             <IconSet
                                 name='arrow_down'
                                 height={65.333}

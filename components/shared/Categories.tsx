@@ -16,7 +16,7 @@ const Categories = () => {
 
 
     return <div >
-        <div className="flex items-center justify-center gap-[59px] pb-[50px]">
+        <div className="flex items-center justify-center gap-[59px] pb-[50px] overflow-hidden max-[1450px]:gap-2 max-[1000px]:grid max-[1000px]:grid-cols-4 max-[1000px]:text-center max-[700px]:grid-cols-3 max-[480px]:grid-cols-2 max-[480px]:px-2">
             {
                 CATEGORIES.map((category, index) => {
                     return <div key={index}>

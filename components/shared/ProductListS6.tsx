@@ -6,7 +6,7 @@ const ProductItemS6 = (product: ProductS6Type) => {
         return `${price.toLocaleString('ko-KR')}원`;
     };
     return (
-        <div className="bg-white max-w-[400px] max-h-[486px]">
+        <div className="bg-white max-w-[400px] max-h-[486px] overflow-hidden">
             <div>
                 <Image
                     src={`/assets/${product.image}.png`}
@@ -36,7 +36,7 @@ const ProductListS6 = ({ products }: { products: ProductS6Type[] }) => {
 
 
     return (
-        <div className="flex items-center justify-center gap-[31px] pb-[227px]">
+        <div className="flex items-center justify-center gap-[31px] pb-[227px] max-[1280px]:flex-col max-[480px]:px-2">
             {
                 products.length > 0 ?
                     products.map((product, index) => {

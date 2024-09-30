@@ -45,7 +45,7 @@ const HomeScreen = () => {
     }, []);
 
     return (
-        <div className="h-full">
+        <div className="h-full overflow-hidden">
             <Header selected={selected} />
             <div ref={sectionRefs[0]}>
                 <Section1 />
@@ -68,7 +68,7 @@ const HomeScreen = () => {
             <div ref={sectionRefs[6]}>
                 <Section7 />
             </div>
-            <div className="fixed right-[80px] top-1/2">
+            <div className="fixed right-[80px] top-1/2 max-[1200px]:right-10 max-[500px]:right-5">
                 <Pagination selected={selected} setSelected={setSelected} sectionRefs={sectionRefs} />
             </div>
         </div>

@@ -1,9 +1,10 @@
+import React from 'react';
 import HeaderSection from '../shared/HeaderSection';
 import Image from 'next/image';
 
 const Section4 = () => {
-    return <div className="bg-white w-full flex items-center ">
-        <div className="flex-1 h-full bg-[#fed614] pt-[200px] flex flex-col items-center pb-[135px]">
+    return <div className="bg-white w-full flex items-center max-[900px]:flex-col">
+        <div className="flex-1 h-full bg-[#fed614] pt-[200px] flex flex-col items-center pb-[135px]  max-[900px]:w-full">
             <HeaderSection
                 titleBlue='Advantages 1'
                 title={

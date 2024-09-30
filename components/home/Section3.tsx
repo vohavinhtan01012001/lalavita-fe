@@ -4,7 +4,7 @@ import React from "react";
 
 const Section3 = () => {
     return <div className="pt-[156px]">
-        <div className="flex items-center justify-center gap-[115px] pb-[156px]">
+        <div className="flex items-center justify-center gap-[115px] pb-[156px] max-[1400px]:flex-col-reverse max-[580px]:px-2">
             <HeaderSection
                 titleBlue="라라비타 NMN 원료"
                 title="Uthever® NMN이 SUPERCONDRIA® NMN으로 새롭게 태어났습니다."

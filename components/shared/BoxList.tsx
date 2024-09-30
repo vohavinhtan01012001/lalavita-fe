@@ -11,7 +11,7 @@ const BoxItem = ({
 }: BoxItemType) => {
     return <div className={
         clsx(
-            'px-[41px] pt-[48px] pb-[74px] w-[467px] h-[448px] rounded-[20px]',
+            'px-[41px] pt-[48px] pb-[74px] w-[467px] h-[448px] rounded-[20px] max-[490px]:w-full',
             color === 'white' ? 'bg-white' : 'bg-[#42c0cc]'
         )
     }>
@@ -32,7 +32,7 @@ const BoxItem = ({
                 </div>
                 <p className={
                     clsx(
-                        'mt-[37px] text-[18px] leading-[30px] max-w-[370px]',
+                        'mt-[37px] text-[18px] leading-[30px] max-w-[370px] max-[490px]:mt-2',
                         color === 'white' ? 'text-[#999999]' : 'text-[#22222]'
                     )
                 }>
@@ -45,7 +45,7 @@ const BoxItem = ({
 
 
 const BoxList = () => {
-    return <div className="flex items-center h-full gap-[30px] w-full justify-center pt-[100px] pb-[170px]">
+    return <div className="flex items-center h-full gap-[30px] w-full justify-center pt-[100px] pb-[170px] overflow-hidden max-[1470px]:flex-col max-[490px]:px-2">
         {
             BOX_LIST.map((item, index) => {
                 return <BoxItem

@@ -8,7 +8,7 @@ const Section7 = () => {
             style={{ backgroundImage: `url(${mainBg07.src})` }}
             className="bg-cover bg-center h-[120vh]"
         >
-            <div className='pt-[200px] pl-[200px]'>
+            <div className='pt-[200px] pl-[200px] max-[720px]:px-2 '>
                 <ContactInfo
                     title='Adress'
                     text="1234, Dosan-daero 1-gil, lalavita Building"

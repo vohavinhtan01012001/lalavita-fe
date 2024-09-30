@@ -14,26 +14,20 @@ const Pagination = ({ selected, setSelected, sectionRefs }: { selected: number, 
 
     return (
         <>
-            {Array.from({ length: totalSections }).map((_, index) =>
-            (
-                selected === 2 || selected === 6 || selected === 7 ? <div
+            {Array.from({ length: totalSections }).map((_, index) => (
+                <div
                     key={index}
                     className={clsx(
                         'w-2 h-2 rounded-full my-2 cursor-pointer',
-                        selected === index + 1 ? 'bg-[#42C0CC]' : 'bg-white',
+                        selected === index + 1
+                            ? 'bg-[#42C0CC]'
+                            : selected === 2 || selected === 6 || selected === 7
+                                ? 'bg-white'
+                                : 'bg-[#e7e7e7]'
                     )}
                     onClick={() => handleClick(index)}
-                ></div> :
-                    <div
-                        key={index}
-                        className={clsx(
-                            'w-2 h-2 rounded-full my-2 cursor-pointer',
-                            selected === index + 1 ? 'bg-[#42C0CC]' : 'bg-[#e7e7e7]',
-                        )}
-                        onClick={() => handleClick(index)}
-                    ></div>
-            )
-            )}
+                ></div>
+            ))}
         </>
     );
 };

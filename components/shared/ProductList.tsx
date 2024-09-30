@@ -96,11 +96,11 @@ const ProductList = () => {
     };
     return (
         <>
-            <div className='flex items-center justify-between w-full px-[227px]'>
+            <div className='flex items-center justify-between w-full px-[227px] overflow-hidden max-[1050px]:px-2 max-[610px]:flex-col'>
                 <HeaderSection
                     titleBlue='NMN의 효능, 효과'
                     title="NMN의 효능과 효과를 한 눈에 살펴보세요."
-                    className='max-w-[370px]'
+                    className='max-w-[370px] max-[400px]:px-2'
                 />
                 <div className='flex items-center gap-[32px]'>
                     <div>
@@ -132,7 +132,7 @@ const ProductList = () => {
                 </div>
             </div>
             <div className="overflow-hidden scroll-smooth mb-[135px] mt-[65px]">
-                <div className="ml-[205px] flex gap-[50px] overflow-x-scroll scrollbar-hide ">
+                <div className="ml-[205px] flex gap-[50px] overflow-x-scroll scrollbar-hide max-[1050px]:ml-2">
                     {
                         PRODUCT_LIST_S5.map((product, index) => (
                             <ProductItem productRef={productRef} selectedIndex={selectedIndex} key={product.id} index={index} {...product} />
