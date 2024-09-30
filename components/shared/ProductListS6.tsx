@@ -17,7 +17,7 @@ const ProductItemS6 = (product: ProductS6Type) => {
             </div>
             <div className=" text-center px-[66px] h-full py-[23px]">
                 <p className="text-[24px] leading-[48.5px] font-semibold">{product.name}</p>
-                <p className="text-[#999999] text-base font-pretendard">남자의 관절, 연골 건강에 도움을 줄 수 있는 제품입니다. 관절&연골 건강기능성 제품</p>
+                <p className="text-[#999999] text-base font-pretendard">{product.description}</p>
             </div>
             <div className="border-t-[2px] border-[#eeeeee] h-[58px] flex items-center justify-center gap-[8px]">
                 <div>
