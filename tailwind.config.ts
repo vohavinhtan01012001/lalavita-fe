@@ -8,12 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        noto: ['Noto Sans KR', 'sans-serif'],
+        pretendard: ['Pretendard', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          '&::-webkit-scrollbar': {
+            display: 'none'
+          },
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none'
+        },
+      }, ['responsive']);
+    },
+  ],
 };
 export default config;
