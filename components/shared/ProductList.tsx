@@ -1,11 +1,12 @@
 'use client'
-import { PRODUCT_LIST_S5, ProductType } from "@/mockData";
+import { PRODUCT_LIST_S5 } from "@/mockData";
 import ButtonIcon from "./ButtonIcon";
 import Image from "next/image";
 import HeaderSection from "./HeaderSection";
 import Button from "./Button";
 import React, { useRef, useState } from "react";
 import { motion } from 'framer-motion';
+import { ProductType } from "@/types";
 
 type ProductItemType = {
     index: number;
@@ -54,10 +55,10 @@ const ProductItem = ({
                                 </Button>
                             </> :
                             <>
-                                <Button variant="light">
+                                <Button variant="light" disabled>
                                     #신체기능향상
                                 </Button>
-                                <Button variant="light">
+                                <Button variant="light" disabled>
                                     #노화억제
                                 </Button>
                             </>

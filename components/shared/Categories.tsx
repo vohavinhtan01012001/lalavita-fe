@@ -3,8 +3,8 @@ import { CATEGORIES, PRODUCT_LIST_S6 } from "@/mockData";
 import Button from "./Button";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { ProductS6Type } from '../../mockData/index';
 import ProductListS6 from "./ProductListS6";
+import { ProductS6Type } from "@/types";
 
 const Categories = () => {
     const [selectedCategoryId, setSelectedCategoryId] = useState(CATEGORIES.length ? CATEGORIES[0].id : 0)

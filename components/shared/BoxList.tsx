@@ -1,10 +1,11 @@
-import { BOX_LIST, BoxItemType } from "@/mockData";
+import { BOX_LIST } from "@/mockData";
+import { BoxItemType } from "@/types";
 import clsx from "clsx";
 import Image from "next/image";
 
 
 const BoxItem = ({
-    icon,
+    image,
     text,
     title,
     color,
@@ -18,8 +19,8 @@ const BoxItem = ({
         <div className="w-full">
             <div className="w-full mb-[26px]">
                 <Image
-                    src={`/assets/${icon}.png`}
-                    alt={icon ?? "img"}
+                    src={`/assets/${image}.png`}
+                    alt={image ?? "img"}
                     height={61}
                     width={61}
                 />

@@ -1,4 +1,4 @@
-import { ProductS6Type } from "@/mockData";
+import { ProductS6Type } from "@/types";
 import Image from "next/image";
 
 const ProductItemS6 = (product: ProductS6Type) => {

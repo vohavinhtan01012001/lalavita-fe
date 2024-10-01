@@ -1,42 +1,21 @@
+import { BoxItemType, ProductS6Type, ProductType } from "@/types";
 
-export type BoxItemType = {
-    icon: string;
-    title: string;
-    text: string;
-    color: 'white' | 'blue';
-}
-export type ProductType = {
-    id: number;
-    image: string;
-    name: string;
-    description: string;
-}
-
-export type ProductS6Type = {
-    id: number;
-    image:string;
-    name: string;
-    description: string;
-    categoryId: number;
-    originalPrice: number;
-    discountedPrice: number;
-}
 
 export const BOX_LIST:BoxItemType[] = [
     {
-        icon: 'main-illust-02-1',
+        image: 'main-illust-02-1',
         title: '인체의 NAD+ 균형 유지를 위해',
         text:'인체에서 에너지 생성, 대사 및 유전자 발현에 중요한 역할을 하는 NAD+ 는 모든 살아 있는 세포에서 발견되는 보조인자입니다. 사람은 나이가 들수록 가졌던 NAD+ 수준이 감소하여 노화 속도가 빨라지고 관련 신체 건강 상태도 나빠지기도 합니다.',
         color:'white'
     },
     {
-        icon: 'main-illust-02-2',
+        image: 'main-illust-02-2',
         title: '인체 내의 주요 세포 에너지원',
         text:'니코틴아마이드 모노뉴클레오타이드(NMN)는 인체 내의 주요 세포 에너지원 중에 하나입니다. 감소된 NAD+ 를 보충제 역할을 함으로써 노화를 늦추는 효과가 있으며, 건강을 향상시키는데 도움이 됩니다.',
         color:'blue'
     },
     {
-        icon: 'main-illust-02-3',
+        image: 'main-illust-02-3',
         title: '젊음 유지 및 노화 억제에 탁월한 효과',
         text:'NMN은 노화를 되돌릴 뿐만 아니라 관련된 질병을 억제하는데 효과적입니다. 연구를 진행한 결과, NMN가 노화로 인한 세포 손상, 신경 퇴행, 심장기능 악화 등의 문제 개선과 젊음을 유지하는데 효과가 있다는 것을 발견했습니다.',
         color:'white'

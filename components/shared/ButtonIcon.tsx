@@ -17,12 +17,12 @@ const ButtonIcon = ({ icon, className, onClick, disabled = false, ...props }: Bu
             whileTap={!disabled ? { scale: 0.95 } : {}}
             className={
                 clsx(
-                    'h-[50px] w-[50px] p-[14px] rounded-full cursor-pointer',
-                    !disabled ? 'bg-[#FED614]' : 'bg-[#e7e7e7]',
+                    'h-[50px] w-[50px] p-[14px] rounded-full ',
+                    !disabled ? 'bg-[#FED614] cursor-pointer' : 'bg-[#e7e7e7] cursor-default',
                     className
                 )
             }
-            onClick={onClick}
+            onClick={!disabled ? onClick : undefined}
             disabled={disabled}
             {...props}
         >
